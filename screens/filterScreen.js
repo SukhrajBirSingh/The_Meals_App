@@ -4,12 +4,12 @@ import {Text, View, Button, StyleSheet } from 'react-native';
 const filterScreen = props => {
 
     return(
-        <view style = {styles.screen}>  
+        <View style = {styles.screen}>  
             <Text>The Filter Screen</Text>
 
 
 
-        </view>
+        </View>
     )
 
 

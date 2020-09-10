@@ -4,12 +4,12 @@ import {Text, View, Button, StyleSheet } from 'react-native';
 const mealDetailScreen = props => {
 
     return(
-        <view style = {styles.screen}>  
+        <View style = {styles.screen}>  
             <Text>The Meal Detail Screen</Text>
 
 
 
-        </view>
+        </View>
     )
 
 

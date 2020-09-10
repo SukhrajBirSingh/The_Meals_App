@@ -4,12 +4,12 @@ import {Text, View, Button, StyleSheet } from 'react-native';
 const favoritesScreen = props => {
 
     return(
-        <view style = {styles.screen}>  
+        <View style = {styles.screen}>  
             <Text>The Favorites Screen</Text>
 
 
 
-        </view>
+        </View>
     )
 
 
