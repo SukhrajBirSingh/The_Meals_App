@@ -7,6 +7,7 @@ import {
   Platform,
   TouchableNativeFeedback,
 } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 
 const CategoryGridTile = (props) => {
   let TochableComp = TouchableOpacity;
@@ -14,17 +15,22 @@ const CategoryGridTile = (props) => {
     TochableComp = TouchableNativeFeedback;
   }
   return (
-    <View style={styles.gridItem}>
-      <TochableComp style={{ flex: 1 }} onPress={props.onSelect}>
-        <View
-          style={{ ...styles.container, ...{ backgroundColor: props.color } }}
-        >
-          <Text style={styles.title} numberOfLines={2}>
-            {props.title}
-          </Text>
-        </View>
-      </TochableComp>
-    </View>
+    <LinearGradient
+      style={styles.gridItem}
+      colors={[props.color, "#f3bad6"]}
+      start={{ x: 0, y: 0 }}
+      end={{ x: -2, y: 0.5 }}
+    >
+      <View style={{ flex: 1 }}>
+        <TochableComp style={{ flex: 1 }} onPress={props.onSelect}>
+          <View style={{ ...styles.container }}>
+            <Text style={styles.title} numberOfLines={2}>
+              {props.title}
+            </Text>
+          </View>
+        </TochableComp>
+      </View>
+    </LinearGradient>
   );
 };
 
