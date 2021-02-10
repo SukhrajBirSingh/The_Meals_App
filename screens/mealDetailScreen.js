@@ -13,7 +13,7 @@ import { CATEGORIES, MEALS } from "../data/dummy-data";
 import { HeaderButtons, Item } from "react-navigation-header-buttons";
 import HeaderButton from "../components/HeaderButton";
 import DefaultText from "../components/DefaultText";
-
+import Colors from "../constants/Colors";
 const ListItem = (props) => {
   return (
     <View style={styles.listItem}>
@@ -82,11 +82,17 @@ const styles = StyleSheet.create({
   image: {
     width: "100%",
     height: 200,
+    borderColor: Colors.accentColor,
+    borderWidth: 2,
+    borderRadius: 20,
   },
   details: {
     flexDirection: "row",
     padding: 15,
     justifyContent: "space-around",
+    //borderColor: Colors.accentColor,
+    // borderWidth: 2,
+    //borderRadius: 20,
   },
   title: {
     fontFamily: "open-sans-bold",
@@ -99,6 +105,10 @@ const styles = StyleSheet.create({
     borderColor: "#ccc",
     borderWidth: 1,
     padding: 10,
+    borderRadius: 15,
+    backgroundColor: "#f2a154",
+    borderColor: Colors.primaryColor,
+    borderWidth: 2,
   },
 });
 

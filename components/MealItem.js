@@ -7,7 +7,7 @@ import {
   ImageBackground,
 } from "react-native";
 import DefaultText from "./DefaultText";
-
+import Colors from "../constants/Colors";
 const MealItem = (props) => {
   return (
     <View style={styles.mealItem}>
@@ -45,6 +45,8 @@ const styles = StyleSheet.create({
     width: "100%",
     backgroundColor: "#e8e8e8",
     borderRadius: 15,
+    borderWidth: 4,
+    borderColor: Colors.accentColor,
     overflow: "hidden",
     marginVertical: 10,
   },

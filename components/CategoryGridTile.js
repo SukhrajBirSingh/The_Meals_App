@@ -6,8 +6,8 @@ import {
   TouchableOpacity,
   Platform,
   TouchableNativeFeedback,
+  Image,
 } from "react-native";
-import { LinearGradient } from "expo-linear-gradient";
 
 const CategoryGridTile = (props) => {
   let TochableComp = TouchableOpacity;
@@ -20,7 +20,18 @@ const CategoryGridTile = (props) => {
         <View
           style={{ ...styles.container, ...{ backgroundColor: props.color } }}
         >
-          <Text style={styles.title} numberOfLines={2}>
+          <View style={{ justifyContent: "center", alignItems: "center" }}>
+            <Image
+              source={{
+                uri: props.image,
+              }}
+              style={{
+                width: 100,
+                height: 100,
+              }}
+            />
+          </View>
+          <Text style={styles.title} numberOfLines={1}>
             {props.title}
           </Text>
         </View>
@@ -51,7 +62,7 @@ const styles = StyleSheet.create({
     elevation: 3,
     padding: 20,
     justifyContent: "flex-end", // headings at bottom
-    alignItems: "flex-end", // right bottom
+    alignItems: "center", // right bottom
   },
   title: {
     fontFamily: "open-sans-bold",
