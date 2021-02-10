@@ -15,22 +15,17 @@ const CategoryGridTile = (props) => {
     TochableComp = TouchableNativeFeedback;
   }
   return (
-    <LinearGradient
-      style={styles.gridItem}
-      colors={[props.color, "#f3bad6"]}
-      start={{ x: 0, y: 0 }}
-      end={{ x: -2, y: 0.5 }}
-    >
-      <View style={{ flex: 1 }}>
-        <TochableComp style={{ flex: 1 }} onPress={props.onSelect}>
-          <View style={{ ...styles.container }}>
-            <Text style={styles.title} numberOfLines={2}>
-              {props.title}
-            </Text>
-          </View>
-        </TochableComp>
-      </View>
-    </LinearGradient>
+    <View style={styles.gridItem}>
+      <TochableComp style={{ flex: 1 }} onPress={props.onSelect}>
+        <View
+          style={{ ...styles.container, ...{ backgroundColor: props.color } }}
+        >
+          <Text style={styles.title} numberOfLines={2}>
+            {props.title}
+          </Text>
+        </View>
+      </TochableComp>
+    </View>
   );
 };
 
@@ -40,13 +35,17 @@ const styles = StyleSheet.create({
     margin: 15,
     height: 150,
     borderRadius: 25, // for android ripple effect ntivefeedbck
-    overflow: "hidden", // for android ripple effect ntivefeedbck
+    overflow:
+      Platform.OS === "android" && Platform.Version >= 21
+        ? "hidden"
+        : "visible", // for android ripple effect ntivefeedbck
+    elevation: 5,
   },
   container: {
     flex: 1,
     borderRadius: 25,
     shadowColor: "black",
-    shadowOpacity: 0.26,
+    shadowOpacity: 0.27,
     shadowOffset: { width: 0, height: 2 },
     shadowRadius: 5,
     elevation: 3,
