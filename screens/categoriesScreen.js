@@ -11,7 +11,6 @@ const CategoriesScreen = (props) => {
         title={itemData.item.title}
         color={itemData.item.color}
         image={itemData.item.image}
-        name={itemData.item.name}
         onSelect={() => {
           props.navigation.navigate({
             routeName: "CategoryMeals",

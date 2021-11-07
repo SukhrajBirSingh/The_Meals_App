@@ -6,61 +6,61 @@ export const CATEGORIES = [
     "c1",
     "Italian",
     "#f5428d",
-    "https://www.flaticon.com/premium-icon/icons/svg/3067/3067801.svg"
+    "https://img-premium.flaticon.com/png/512/1211/premium/1211020.png?token=exp=1629044942~hmac=4a2c6daec489ef59086fbe8c1029d563"
   ),
   new Category(
     "c2",
     "Quick & Easy",
     "#f54242",
-    "https://www.flaticon.com/premium-icon/icons/svg/2975/2975977.svg"
+    "https://image.flaticon.com/icons/png/512/776/776452.png"
   ),
   new Category(
     "c3",
     "Hamburgers",
     "#f5a442",
-    "https://www.flaticon.com/premium-icon/icons/svg/1923/1923533.svg"
+    "https://image.flaticon.com/icons/png/512/877/877951.png"
   ),
   new Category(
     "c4",
     "German",
     "#f5d142",
-    "https://www.flaticon.com/premium-icon/icons/svg/395/395232.svg"
+    "https://img-premium.flaticon.com/png/512/395/premium/395232.png?token=exp=1629046364~hmac=fa68c08149629e1be940a15baef1339c"
   ),
   new Category(
     "c5",
     "Light & Lovely",
     "#368dff",
-    "https://www.flaticon.com/premium-icon/icons/svg/2515/2515183.svg"
+    "https://image.flaticon.com/icons/png/512/3768/3768546.png"
   ),
   new Category(
     "c6",
     "Exotic",
     "#41d95d",
-    "https://www.flaticon.com/premium-icon/icons/svg/2137/2137669.svg"
+    "https://image.flaticon.com/icons/png/512/5036/5036621.png"
   ),
   new Category(
     "c7",
     "Breakfast",
     "#9eecff",
-    "https://www.flaticon.com/premium-icon/icons/svg/3105/3105310.svg"
+    "https://image.flaticon.com/icons/png/512/4391/4391590.png"
   ),
   new Category(
     "c8",
     "Asian",
     "#b9ffb0",
-    "https://www.flaticon.com/premium-icon/icons/svg/783/783054.svg"
+    "https://img-premium.flaticon.com/png/512/783/premium/783054.png?token=exp=1629045137~hmac=65ea3cf982069bbb560f5dec675fd94a"
   ),
   new Category(
     "c9",
     "French",
     "#ffc7ff",
-    "https://www.flaticon.com/premium-icon/icons/svg/3370/3370523.svg"
+    "https://image.flaticon.com/icons/png/512/5390/5390028.png"
   ),
   new Category(
     "c10",
     "Summer",
     "#47fced",
-    "https://www.flaticon.com/premium-icon/icons/svg/3194/3194591.svg"
+    "https://image.flaticon.com/icons/png/512/5381/5381515.png"
   ),
 ];
 

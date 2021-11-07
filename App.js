@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Text, View, ActivityIndicator } from "react-native";
 import * as Font from "expo-font";
-import { AppLoading } from "expo";
+import AppLoading from "expo-app-loading";
 import { enableScreens } from "react-native-screens"; // default screens android and ios
 import { createStore, combineReducers } from "redux"; //redux
 import MealsNavigator from "./navigation/MealsNavigator";
@@ -30,6 +29,9 @@ export default function App() {
       <AppLoading
         startAsync={fetchFonts}
         onFinish={() => setFontLoaded(true)}
+        onError={() => {
+          console.log("error");
+        }}
       />
     );
   }

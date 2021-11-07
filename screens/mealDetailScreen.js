@@ -52,7 +52,9 @@ const MealDetailScreen = (props) => {
   //);
   return (
     <ScrollView>
-      <Image source={{ uri: selectedMeal.imageURL }} style={styles.image} />
+      <View style={styles.imageContainer}>
+        <Image source={{ uri: selectedMeal.imageURL }} style={styles.image} />
+      </View>
       <View style={styles.details}>
         <DefaultText>{selectedMeal.duration}m</DefaultText>
         <DefaultText>{selectedMeal.complexity.toUpperCase()}</DefaultText>
@@ -93,10 +95,15 @@ MealDetailScreen.navigationOptions = (navigationData) => {
 };
 
 const styles = StyleSheet.create({
+  imageContainer: {
+    width: "100%",
+    height: 200,
+    padding: 5,
+  },
   image: {
     width: "100%",
     height: 200,
-    borderColor: Colors.accentColor,
+    borderColor: Colors.primaryColor,
     borderWidth: 2,
     borderRadius: 20,
   },
@@ -120,7 +127,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     padding: 10,
     borderRadius: 15,
-    backgroundColor: "#f2a154",
+    // backgroundColor: "#f2a154",
     borderColor: Colors.primaryColor,
     borderWidth: 2,
   },

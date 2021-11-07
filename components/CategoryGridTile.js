@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     fontFamily: "open-sans-bold",
     fontSize: 18,
     textAlign: "right",
-    //color: "white",
+    color: "white",
   },
 });
 
