@@ -1,7 +1,7 @@
 # The_Meals_App
 
 <p>
-A simple meal prepration app with different categories. You can add favorites and filter out meals according to your needs!
+A simple meal prepration app with different categories. You can add favorites and filter out meals according to your needs! (Tutorial app with little cutomization)
 </p>
 
 
